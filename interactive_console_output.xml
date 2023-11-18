@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20231118 12:55:50.761" rpa="false" schemaversion="4">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\Windows\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Wait Until Page Contains">
+<arg>Cadastro</arg>
+<msg timestamp="20231118 12:55:51.187" level="FAIL">No keyword with name 'Wait Until Page Contains' found.</msg>
+<status status="FAIL" starttime="20231118 12:55:51.187" endtime="20231118 12:55:51.187"/>
+</kw>
+<kw name="Click Text">
+<arg>Cadastro</arg>
+<status status="NOT RUN" starttime="20231118 12:55:51.188" endtime="20231118 12:55:51.188"/>
+</kw>
+<kw name="Wait Until Page Contains">
+<arg>Crie sua conta.</arg>
+<status status="NOT RUN" starttime="20231118 12:55:51.189" endtime="20231118 12:55:51.189"/>
+</kw>
+<kw name="Input Text">
+<arg>id=com.qaxperience.yodapp:id/etUsername</arg>
+<arg>Matheus</arg>
+<status status="NOT RUN" starttime="20231118 12:55:51.189" endtime="20231118 12:55:51.189"/>
+</kw>
+<kw name="Input Text">
+<arg>id=com.qaxperience.yodapp:id/etEmail</arg>
+<arg>matheus@qax.com</arg>
+<status status="NOT RUN" starttime="20231118 12:55:51.190" endtime="20231118 12:55:51.190"/>
+</kw>
+<kw name="Input Text">
+<arg>id=com.qaxperience.yodapp:id/tvPasswordLayout</arg>
+<arg>1234</arg>
+<status status="NOT RUN" starttime="20231118 12:55:51.191" endtime="20231118 12:55:51.191"/>
+</kw>
+<kw name="select level">
+<arg>level=Padawan</arg>
+<status status="NOT RUN" starttime="20231118 12:55:51.191" endtime="20231118 12:55:51.191"/>
+</kw>
+<kw name="Click Element">
+<arg>id=com.qaxperience.yodapp:id/btnSubmit</arg>
+<status status="NOT RUN" starttime="20231118 12:55:51.192" endtime="20231118 12:55:51.192"/>
+</kw>
+<kw name="Wait Until Page Contains">
+<arg>text=Tudo certo, boas vindas ao Yodapp!</arg>
+<status status="NOT RUN" starttime="20231118 12:55:51.193" endtime="20231118 12:55:51.193"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231118 12:55:51.193" endtime="20231118 12:55:51.193"/>
+</kw>
+<kw name="Close session">
+<status status="NOT RUN" starttime="20231118 12:55:51.193" endtime="20231118 12:55:51.193"/>
+</kw>
+<status status="PASS" starttime="20231118 12:55:50.777" endtime="20231118 12:55:52.909"/>
+</kw>
+<status status="PASS" starttime="20231118 12:55:50.777" endtime="20231118 12:55:52.909"/>
+</test>
+<status status="PASS" starttime="20231118 12:55:50.762" endtime="20231118 12:55:52.909"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
