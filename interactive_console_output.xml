@@ -1,61 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20231118 12:55:50.761" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20240113 12:52:29.071" rpa="false" schemaversion="4">
 <suite id="s1" name="Robot Interactive Console" source="c:\Users\Windows\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
 <test id="s1-t1" name="Default Task/Test" line="5">
 <kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Start session">
+<msg timestamp="20240113 12:52:29.481" level="FAIL">No keyword with name 'Start session' found.</msg>
+<status status="FAIL" starttime="20240113 12:52:29.481" endtime="20240113 12:52:29.481"/>
+</kw>
+<kw name="Get started">
+<status status="NOT RUN" starttime="20240113 12:52:29.482" endtime="20240113 12:52:29.482"/>
+</kw>
+<kw name="Navigate to">
+<arg>item_text=Star Wars</arg>
+<status status="NOT RUN" starttime="20240113 12:52:29.482" endtime="20240113 12:52:29.482"/>
+</kw>
 <kw name="Wait Until Page Contains">
-<arg>Cadastro</arg>
-<msg timestamp="20231118 12:55:51.187" level="FAIL">No keyword with name 'Wait Until Page Contains' found.</msg>
-<status status="FAIL" starttime="20231118 12:55:51.187" endtime="20231118 12:55:51.187"/>
+<arg>Lista</arg>
+<status status="NOT RUN" starttime="20240113 12:52:29.483" endtime="20240113 12:52:29.483"/>
 </kw>
-<kw name="Click Text">
-<arg>Cadastro</arg>
-<status status="NOT RUN" starttime="20231118 12:55:51.188" endtime="20231118 12:55:51.188"/>
+<kw name="Go to item">
+<arg>Lista</arg>
+<arg>Darth Vader</arg>
+<status status="NOT RUN" starttime="20240113 12:52:29.484" endtime="20240113 12:52:29.484"/>
 </kw>
-<kw name="Wait Until Page Contains">
-<arg>Crie sua conta.</arg>
-<status status="NOT RUN" starttime="20231118 12:55:51.189" endtime="20231118 12:55:51.189"/>
+<kw name="Set Variable" library="BuiltIn">
+<var>${start_x}</var>
+<arg>991</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20240113 12:52:29.484" endtime="20240113 12:52:29.484"/>
 </kw>
-<kw name="Input Text">
-<arg>id=com.qaxperience.yodapp:id/etUsername</arg>
-<arg>Matheus</arg>
-<status status="NOT RUN" starttime="20231118 12:55:51.189" endtime="20231118 12:55:51.189"/>
+<kw name="Set Variable" library="BuiltIn">
+<var>${start_y}</var>
+<arg>753</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20240113 12:52:29.484" endtime="20240113 12:52:29.484"/>
 </kw>
-<kw name="Input Text">
-<arg>id=com.qaxperience.yodapp:id/etEmail</arg>
-<arg>matheus@qax.com</arg>
-<status status="NOT RUN" starttime="20231118 12:55:51.190" endtime="20231118 12:55:51.190"/>
+<kw name="Set Variable" library="BuiltIn">
+<var>${offset_x}</var>
+<arg>268</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20240113 12:52:29.484" endtime="20240113 12:52:29.485"/>
 </kw>
-<kw name="Input Text">
-<arg>id=com.qaxperience.yodapp:id/tvPasswordLayout</arg>
-<arg>1234</arg>
-<status status="NOT RUN" starttime="20231118 12:55:51.191" endtime="20231118 12:55:51.191"/>
+<kw name="Set Variable" library="BuiltIn">
+<var>${offset_y}</var>
+<arg>759</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20240113 12:52:29.485" endtime="20240113 12:52:29.485"/>
 </kw>
-<kw name="select level">
-<arg>level=Padawan</arg>
-<status status="NOT RUN" starttime="20231118 12:55:51.191" endtime="20231118 12:55:51.191"/>
+<kw name="Swipe">
+<arg>${start_x}</arg>
+<arg>${start_y}</arg>
+<arg>${offset_x}</arg>
+<arg>${offset_y}</arg>
+<arg>1000</arg>
+<status status="NOT RUN" starttime="20240113 12:52:29.485" endtime="20240113 12:52:29.485"/>
 </kw>
 <kw name="Click Element">
-<arg>id=com.qaxperience.yodapp:id/btnSubmit</arg>
-<status status="NOT RUN" starttime="20231118 12:55:51.192" endtime="20231118 12:55:51.192"/>
+<arg>com.qaxperience.yodapp:id/btnRemove</arg>
+<status status="NOT RUN" starttime="20240113 12:52:29.486" endtime="20240113 12:52:29.486"/>
 </kw>
-<kw name="Wait Until Page Contains">
-<arg>text=Tudo certo, boas vindas ao Yodapp!</arg>
-<status status="NOT RUN" starttime="20231118 12:55:51.193" endtime="20231118 12:55:51.193"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20231118 12:55:51.193" endtime="20231118 12:55:51.193"/>
+<kw name="Wait Until Page Does Not Contain">
+<arg>Darth Vader</arg>
+<status status="NOT RUN" starttime="20240113 12:52:29.486" endtime="20240113 12:52:29.486"/>
 </kw>
 <kw name="Close session">
-<status status="NOT RUN" starttime="20231118 12:55:51.193" endtime="20231118 12:55:51.193"/>
+<status status="NOT RUN" starttime="20240113 12:52:29.487" endtime="20240113 12:52:29.487"/>
 </kw>
-<status status="PASS" starttime="20231118 12:55:50.777" endtime="20231118 12:55:52.909"/>
+<status status="PASS" starttime="20240113 12:52:29.086" endtime="20240113 12:52:33.057"/>
 </kw>
-<status status="PASS" starttime="20231118 12:55:50.777" endtime="20231118 12:55:52.909"/>
+<status status="PASS" starttime="20240113 12:52:29.086" endtime="20240113 12:52:33.057"/>
 </test>
-<status status="PASS" starttime="20231118 12:55:50.762" endtime="20231118 12:55:52.909"/>
+<status status="PASS" starttime="20240113 12:52:29.072" endtime="20240113 12:52:33.057"/>
 </suite>
 <statistics>
 <total>
